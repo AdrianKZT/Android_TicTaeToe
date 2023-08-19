@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <EditText
+            android:id="@+id/PlayerCom1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="15dp"
+            android:background="@drawable/edit_text"
+            android:hint="Player Name"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textColor="@color/mintGreen"
+            android:textColorHint="@color/mintGreen" />
+
+        <EditText
+            android:id="@+id/etComputer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="30dp"
+            android:background="@drawable/edit_text"
+            android:focusable="false"
+            android:hint="Computer"
+            android:inputType="none"
+            android:padding="15dp"
+            android:textColor="@color/mintGreen"
+            android:textColorHint="@color/mintGreen" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSubmitCom"
+        android:layout_below="@id/linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/mintGreen"
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="80dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <View
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mintGreen"
+        android:layout_above="@id/btnBackCom"
+        android:layout_marginBottom="20dp"
+         />
+
+    <Button
+        android:id="@+id/btnBackCom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textColor="@color/black"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/mintGreen"
+        android:layout_marginBottom="15dp"
+        android:paddingHorizontal="80dp"
+        />
+
+
+</RelativeLayout>
